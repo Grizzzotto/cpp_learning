@@ -3,12 +3,10 @@
 using namespace std;
 
 int main() {
-    int a = 1;
-    int b = 2;
-    a+=5;
-    int c = a;
-    cout << "a = " << a << endl
-         << "b = " << b << endl
-         << "c = " << c << endl;
+    double sales = 95000;
+    const double state_tax = 0.04;
+    const double county_tax = 0.02;
+    double clean_summ = sales*(1-state_tax)*(1-county_tax);
+    cout << clean_summ;
     return 0;
 }
