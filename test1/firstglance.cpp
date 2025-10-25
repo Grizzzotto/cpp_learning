@@ -5,13 +5,18 @@ using namespace std;
 
 int main() {
     
-    cout << "Enter values for x and y: ";
-    double x = 0;
-    double y = 0;
-    cin >> x >> y;
+    const double pi = 3;
+    double r = 0;
 
-    double z = pow(x, y);
-    cout << "The value is: " << z << endl;
+    cout << "type in the radius of the circle" << endl;
+    cin >> r;
+    cout << endl;
+    
+    double area = pi*r*r;
+    cout << "calculating without cmath: " << area << endl;
+    area = pi * pow(r, 2);
+    cout << "calculating with cmath: " << area << endl;
+
 
 
     return 0;
