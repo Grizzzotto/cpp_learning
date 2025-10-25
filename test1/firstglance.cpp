@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
     
-    const double pi = 3;
-    double r = 0;
+    const double pi = 3.14;
+    double r = 0; // Declare radius 
 
     cout << "type in the radius of the circle" << endl;
     cin >> r;
@@ -17,7 +17,7 @@ int main() {
     area = pi * pow(r, 2);
     cout << "calculating with cmath: " << area << endl;
 
-
+    //Really usefull comment
 
     return 0;
 }
